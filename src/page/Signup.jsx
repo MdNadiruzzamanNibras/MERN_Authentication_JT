@@ -59,7 +59,7 @@ const Signup = () => {
               name="name"
               onChange={(e) => setData(e)}
               placeholder="Your Name"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
+              className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
             />
           </div>
           <div className="flex flex-col">
@@ -71,7 +71,7 @@ const Signup = () => {
               name="email"
               onChange={(e) => setData(e)}
               placeholder="Your Email"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
+              className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
             />
           </div>
           <div className="flex flex-col">
@@ -83,7 +83,7 @@ const Signup = () => {
               onChange={setData}
               name="password"
               placeholder="Password"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
+              className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
             />
           </div>
           <div className="flex flex-col">
@@ -95,56 +95,62 @@ const Signup = () => {
               name="phone"
               onChange={setData}
               placeholder="Your phone"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
+              className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
             />
           </div>
-          <div className="flex flex-col">
-            <label className="label">
-              <span className="text-base text-black font-bold">Gender</span>
-            </label>
-            <input
-              type="text"
-              onChange={setData}
-              name="gender"
-              placeholder="Your Gender"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
-            />
+          <div className="flex items-center">
+            <div className="flex flex-col">
+              <label className="label">
+                <span className="text-base text-black font-bold">Gender</span>
+              </label>
+              <input
+                type="text"
+                onChange={setData}
+                name="gender"
+                placeholder="Your Gender"
+                className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
+              />
+            </div>
+            <div className="flex flex-col ml-3">
+              <label className="label">
+                <span className="text-base text-black font-bold">
+                  Job Portal
+                </span>
+              </label>
+              <input
+                type="text"
+                onChange={setData}
+                name="jobPortal"
+                placeholder="Job Portal"
+                className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
+              />
+            </div>
           </div>
-          <div className="flex flex-col">
-            <label className="label">
-              <span className="text-base text-black font-bold">Job Portal</span>
-            </label>
-            <input
-              type="text"
-              onChange={setData}
-              name="jobPortal"
-              placeholder="Job Portal"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
-            />
-          </div>
-          <div className="flex flex-col">
-            <label className="label">
-              <span className="text-base text-black font-bold">City</span>
-            </label>
-            <input
-              type="text"
-              onChange={setData}
-              name="city"
-              placeholder="Your City"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
-            />
-          </div>
-          <div className="flex flex-col">
-            <label className="label">
-              <span className="text-base text-black font-bold">State</span>
-            </label>
-            <input
-              type="text"
-              onChange={setData}
-              name="state"
-              placeholder="Your State"
-              className="text-center py-2 w-72 my-2 border-2 focus:outline-none rounded"
-            />
+          <div className="flex items-center">
+            <div className="flex flex-col">
+              <label className="label">
+                <span className="text-base text-black font-bold">City</span>
+              </label>
+              <input
+                type="text"
+                onChange={setData}
+                name="city"
+                placeholder="Your City"
+                className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
+              />
+            </div>
+            <div className="flex flex-col ml-3">
+              <label className="label">
+                <span className="text-base text-black font-bold">State</span>
+              </label>
+              <input
+                type="text"
+                onChange={setData}
+                name="state"
+                placeholder="Your State"
+                className="text-center py-2 w-full my-2 border-2 focus:outline-none rounded"
+              />
+            </div>
           </div>
           <div className="flex justify-center ">
             <button
