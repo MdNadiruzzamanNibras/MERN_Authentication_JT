@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Signup = () => {
   // const navigate = useNavigate()
-  // const [error, setError] = useState("");
+  const [error, setError] = useState("");
   const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",
@@ -39,8 +39,7 @@ const Signup = () => {
     const data = await res.json();
     console.log(data);
     if (res.status === 404 || !data) {
-      alert("error");
-      console.log("error");
+      setError(error);
     } else {
       alert("Add success");
       console.log(data);
@@ -49,6 +48,7 @@ const Signup = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="w-96">
+        <h1 className="text-4xl text-center">Sign Up</h1>
         <form onSubmit={handleRegister}>
           <div className="flex flex-col">
             <label className="label">
@@ -160,7 +160,7 @@ const Signup = () => {
               Sign Up
             </button>
           </div>
-          {/* <p>{ error}</p> */}
+          <p>{error}</p>
         </form>
       </div>
     </div>
