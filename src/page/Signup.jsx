@@ -48,7 +48,7 @@ const Signup = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="w-96">
-        <h1 className="text-4xl text-center">Sign Up</h1>
+        <h1 className="text-4xl text-center my-10">Sign Up</h1>
         <form onSubmit={handleRegister}>
           <div className="flex flex-col">
             <label className="label">
